@@ -1,0 +1,16 @@
+---
+import Divider from "@components/Divider";
+import HeadingSection from "@components/sections/HeadingSection";
+import WorkExperience from "@components/sections/WorkExpSection";
+import ProfessionalPortfolio from "@components/sections/ProfessionalPortoSection";
+import Layout from "@layouts/Layout.astro";
+---
+
+
+<Layout title="Arthur Darwanto">
+  <HeadingSection />
+  <Divider client:load />
+  <WorkExperience client:load />
+  <Divider client:load />
+  <ProfessionalPortfolio client:load />
+</Layout>
