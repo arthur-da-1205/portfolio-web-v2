@@ -23,9 +23,9 @@ const ProfessionalPortfolio = () => {
           tags={["React", "Typescript", "Vite", "Ant Design", "Tailwind CSS", "GraphQL", "Less"]}
         >
           <a href="">
-            <div className="flex h-full w-full overflow-hidden rounded-2xl bg-gray-100 hover:bg-gray-50 sm:w-52 lg:w-full">
+            <div className="overflow-hidden rounded-2xl bg-gray-100 hover:bg-gray-50 sm:w-1/2 md:w-full lg:w-full xl:w-full">
               <img
-                className="w-[150px] h-[150px] transition-transform group-hover:z-20 group-hover:scale-110 sm:w-28 lg:w-full"
+                className="lg:w-[250px] lg:h-[150px] transition-transform group-hover:z-20 group-hover:scale-110 sm:w-28 sm:h-28"
                 src={linistore.src}
                 alt="ping4gitlab iphone screenshot 1"
               />
@@ -50,9 +50,9 @@ const ProfessionalPortfolio = () => {
           tags={["React", "Typescript", "Vite", "Chakra UI", "SCSS", "GraphQL", "PWA", "Capacitor by Ionic"]}
         >
           <a href="">
-            <div className="flex h-full w-full overflow-hidden rounded-2xl bg-gray-100 hover:bg-gray-50 sm:w-52 lg:w-full">
+            <div className="overflow-hidden rounded-2xl bg-gray-100 hover:bg-gray-50 sm:w-1/2 md:w-full lg:w-full xl:w-full">
               <img
-                className="w-[200px] h-[200px] transition-transform group-hover:z-20 group-hover:scale-110 sm:w-28 lg:w-full"
+                className="lg:w-[200px] lg:h-[200px] transition-transform group-hover:z-20 group-hover:scale-110"
                 src={linimitra.src}
                 alt="ping4gitlab iphone screenshot 1"
               />
@@ -76,9 +76,9 @@ const ProfessionalPortfolio = () => {
           tags={["Angular", "Typescript", "Ant Design", "SCSS", "GraphQL", "PWA", "Capacitor by Ionic"]}
         >
           <a href="">
-            <div className="flex h-full w-full overflow-hidden rounded-2xl bg-gray-100 hover:bg-gray-50 sm:w-52 lg:w-full">
+            <div className="overflow-hidden rounded-2xl bg-gray-100 hover:bg-gray-50 sm:w-1/2 md:w-full lg:w-full xl:w-full">
               <img
-                className="w-[150px] h-[150px] transition-transform group-hover:z-20 group-hover:scale-110 sm:w-28 lg:w-full"
+                className="lg:w-[250px] lg:h-[150px] transition-transform group-hover:z-20 group-hover:scale-110 sm:w-28 sm:h-28"
                 src={liniseller1.src}
                 alt="ping4gitlab iphone screenshot 1"
               />
@@ -102,9 +102,9 @@ const ProfessionalPortfolio = () => {
           tags={["React", "Typescript", "Chakra UI", "SCSS", "Restful API", "PWA", "Capacitor by Ionic"]}
         >
           <a href="">
-            <div className="flex h-full w-full overflow-hidden rounded-2xl bg-gray-100 hover:bg-gray-50 sm:w-52 lg:w-full">
+            <div className="overflow-hidden rounded-2xl bg-gray-100 hover:bg-gray-50 sm:w-1/2 md:w-full lg:w-full xl:w-full">
               <img
-                className="w-[200px] h-[200px] transition-transform group-hover:z-20 group-hover:scale-110 sm:w-28 lg:w-full"
+                className="lg:w-[200px] lg:h-[200px] transition-transform group-hover:z-20 group-hover:scale-110"
                 src={sobatTani.src}
                 alt="ping4gitlab iphone screenshot 1"
               />
