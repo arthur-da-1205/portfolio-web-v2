@@ -47,7 +47,7 @@ const HeadingSection = () => {
               <LinkButton
                 className="text-sm lg:text-base"
                 text="Download CV"
-                href="https://drive.google.com/file/d/1BHuNayOLBZ8-ldZ1m6qtdzHU4IRRxhEO/view?usp=drive_link"
+                href="https://drive.google.com/file/d/10jn4wV7o_lxqAdI5bU38CFzs2X3CSu-r/view?usp=sharing"
               />
             </div>
             <div className="ml-1 px-1 border-dotted border-b-2 border-slate-500 w-fit cursor-pointer hover:border-slate-600">
