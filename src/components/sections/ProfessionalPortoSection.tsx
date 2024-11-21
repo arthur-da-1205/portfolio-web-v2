@@ -7,7 +7,7 @@ import sobatTani from "@assets/sobat_tani.png";
 
 const ProfessionalPortfolio = () => {
   return (
-    <div className="my-8 flex flex-col gap-4">
+    <div className="mt-4 flex flex-col gap-4">
       <SectionHeader name="professional work" />
       <div className="mt-4 grid gap-8">
         <PersonalWorkCard

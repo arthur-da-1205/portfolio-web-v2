@@ -31,7 +31,7 @@ const text: Variants = {
 
 const WorkExperience = () => {
   return (
-    <div className="my-8">
+    <div className="mt-4 w-full">
       <SectionHeader name="work experience" />
       <div className="mt-8 grid gap-8 sm:mt-4">
         <motion.div
