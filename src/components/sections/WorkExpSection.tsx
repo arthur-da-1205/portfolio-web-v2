@@ -3,39 +3,53 @@ import { motion, type Variants } from "framer-motion";
 
 const experiences = [
   {
+    period: "March 2025 ― May 2026",
+    title: "Software Developer",
+    company: "Abersoft Technologies",
+    companyUrl: "https://abersoft.se/",
+    description:
+      "Collaborated with backend team to develop the Julo web application (https://julo.se). Built Dashboard App for Admin to manage all in Fika App and CS support. Handled both frontend and backend development. (abersoft.se / abersoft.id)",
+  },
+  {
     period: "August 2022 ― Present",
     title: "Frontend Developer",
     company: "PT Solusi Sinergi Digital Tbk (SURGE)",
     companyUrl: "https://www.surge.co.id/",
-    description: "Build some digital product with React, NestJS and TypeScript. Work with team and mostly in Frontend.",
+    description:
+      "Build some digital product with React, NestJS and TypeScript. Work with team and mostly in Frontend.",
   },
   {
     period: "May 2021 ― Present",
     title: "Software Developer (Freelancer)",
-    company: "Devoluiton",
-    companyUrl: "",
-    description: "Build web app, web portfolio, mobile app as the client requests. Help client to solve their problem with digital solutions.",
+    company: "Human Creative Solution (HaCS)",
+    companyUrl: "https://www.humancreativesolution.id/",
+    description:
+      "Build web app, web portfolio, mobile app as the client requests. Help client to solve their problem with digital solutions.",
   },
   {
     period: "October 2019 ― May 2021",
     title: "IT Developer",
     company: "PT. Tokoh Indonesia Muda Eksekutif (TIME)",
     companyUrl: "https://thinkindonesia.co.id",
-    description: "Contributed to build internal software and maintenance them. Help team to process and maintenance digital ads easily.",
+    description:
+      "Contributed to build internal software and maintenance them. Help team to process and maintenance digital ads easily.",
   },
   {
     period: "June 2018 ― September 2019",
     title: "Expert (Contract)",
-    company: "4th Commission of Representatives of the Republic of Indonesia (DPR-RI)",
+    company:
+      "4th Commission of Representatives of the Republic of Indonesia (DPR-RI)",
     companyUrl: "https://www.dpr.go.id/",
-    description: "Contribute to process and present data to make decision for some case in agricultural field.",
+    description:
+      "Contribute to process and present data to make decision for some case in agricultural field.",
   },
   {
     period: "October 2016 ― July 2017",
     title: "Technical Consultant",
     company: "PT. Omega Teknologi Indonesia (Omega Software)",
     companyUrl: "http://dev.omegasoft.co.id/",
-    description: "Training client how to use the apps. Maintenance it, and fixing some bug and problem for client.",
+    description:
+      "Training client how to use the apps. Maintenance it, and fixing some bug and problem for client.",
   },
 ];
 
@@ -92,7 +106,9 @@ const WorkExperience = () => {
               </div>
 
               {/* Content Card */}
-              <div className={`relative flex-1 ${index % 2 === 0 ? "md:ml-12" : "md:mr-12 ml-12 md:ml-0"}`}>
+              <div
+                className={`relative flex-1 ${index % 2 === 0 ? "md:ml-12" : "md:mr-12 ml-12 md:ml-0"}`}
+              >
                 <div className="relative group">
                   {/* Background gradient */}
                   <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-purple-600 rounded-2xl blur opacity-0 group-hover:opacity-25 transition duration-300" />
