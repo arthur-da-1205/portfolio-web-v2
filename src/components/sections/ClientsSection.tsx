@@ -91,7 +91,7 @@ const ClientsSection = () => {
                 <div className="relative p-4 md:p-6 border border-gray-200/50 dark:border-gray-600/50 rounded-xl hover:border-blue-300/50 dark:hover:border-blue-400/50 transition-colors flex items-center justify-center min-h-[120px] md:min-h-[140px]">
                   <div className="flex items-center justify-center w-full h-full">
                     <img
-                      src={client.logo.src || client.logo}
+                      src={client.logo.src || client.logo || ""}
                       alt={client.name}
                       className="w-full h-auto max-h-[80px] md:max-h-[100px] object-contain filter dark:brightness-75 hover:dark:brightness-90 transition-all duration-300"
                       title={client.name}

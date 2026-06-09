@@ -75,27 +75,6 @@ const HeadingSection = () => {
             </span>
           </motion.h1>
 
-          {/* Description */}
-          <motion.p
-            className="text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8 max-w-2xl"
-            variants={itemVariants}
-          >
-            I'm a{" "}
-            <span className="font-semibold text-gray-900 dark:text-white">
-              Software Developer
-            </span>{" "}
-            focused on building scalable web applications with{" "}
-            <span className="font-semibold text-gray-900 dark:text-white">
-              React
-            </span>{" "}
-            and{" "}
-            <span className="font-semibold text-gray-900 dark:text-white">
-              Node.js
-            </span>
-            . I create clean, efficient code using modern technologies like
-            TypeScript and follow best practices to deliver robust solutions.
-          </motion.p>
-
           {/* Social Links and CTA Buttons */}
           <motion.div
             className="flex flex-wrap items-center gap-4"
@@ -143,9 +122,7 @@ const HeadingSection = () => {
                 Download CV
               </a>
               <a
-                href="https://api.whatsapp.com/send/?phone=6281913581675&text&type=phone_number&app_absent=0"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#contact"
                 className="px-6 py-3 border-2 border-blue-500 dark:border-blue-400 text-blue-500 dark:text-blue-400 font-semibold rounded-xl hover:bg-blue-50 dark:hover:bg-blue-950 transition-all duration-300 hover:scale-105"
               >
                 Contact Me

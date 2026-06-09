@@ -1,24 +1,48 @@
 ---
 import Divider from "@components/Divider";
 import HeadingSection from "@components/sections/HeadingSection";
+import AboutSection from "@components/sections/AboutSection";
 import WorkExperience from "@components/sections/WorkExpSection";
 import ProfessionalPortfolio from "@components/sections/ProfessionalPortoSection";
 import ClientsSection from "@components/sections/ClientsSection";
+import ContactSection from "@components/sections/ContactSection";
+import Navigation from "@components/Navigation";
+import Footer from "@components/Footer";
 import Layout from "@layouts/Layout.astro";
 import SkillSetSection from "@components/sections/SkillSetSection";
 ---
 
 
 <Layout title="Arthur Darwanto - Software Developer">
+  <Navigation client:load />
   <div class="space-y-16">
-    <HeadingSection client:load />
+    <div data-section="heading">
+      <HeadingSection client:load />
+    </div>
     <Divider client:load />
-    <SkillSetSection client:load />
+    <div data-section="about">
+      <AboutSection client:load />
+    </div>
     <Divider client:load />
-    <WorkExperience client:load />
+    <div data-section="skills">
+      <SkillSetSection client:load />
+    </div>
     <Divider client:load />
-    <ProfessionalPortfolio client:load />
+    <div data-section="experience">
+      <WorkExperience client:load />
+    </div>
     <Divider client:load />
-    <ClientsSection client:load />
+    <div data-section="portfolio">
+      <ProfessionalPortfolio client:load />
+    </div>
+    <Divider client:load />
+    <div data-section="clients">
+      <ClientsSection client:load />
+    </div>
+    <Divider client:load />
+    <div data-section="contact">
+      <ContactSection client:load />
+    </div>
   </div>
+  <Footer client:load />
 </Layout>
