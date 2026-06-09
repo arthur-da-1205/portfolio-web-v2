@@ -3,6 +3,7 @@ import Divider from "@components/Divider";
 import HeadingSection from "@components/sections/HeadingSection";
 import WorkExperience from "@components/sections/WorkExpSection";
 import ProfessionalPortfolio from "@components/sections/ProfessionalPortoSection";
+import ClientsSection from "@components/sections/ClientsSection";
 import Layout from "@layouts/Layout.astro";
 import SkillSetSection from "@components/sections/SkillSetSection";
 ---
@@ -17,5 +18,7 @@ import SkillSetSection from "@components/sections/SkillSetSection";
     <WorkExperience client:load />
     <Divider client:load />
     <ProfessionalPortfolio client:load />
+    <Divider client:load />
+    <ClientsSection client:load />
   </div>
 </Layout>
