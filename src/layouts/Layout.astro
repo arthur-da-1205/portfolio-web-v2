@@ -1,3 +1,10 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,12 +14,12 @@
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="canonical" href=""/>
     <meta name="generator" content={Astro.generator} />
-    <title>Arthur Darwanto</title>
+    <title>Arthur Darwanto - Software Developer</title>
     <meta
       name="description"
       content="Hello there! I'm Arthur Darwwanto, a software engineer based in Indonesia and I love programming."
     />
-    <meta 
+    <meta
       name="keywords"
       content="Arthur Darwanto, Darwanto Arthur, ArthurDarwanto, arthurdarwanto, Arthur Developer, software engineer, web developer, front-end developer, full-stack developer, fullstack developer, software developer, react developer, react native developer, nodejs, nestjs"
     />
@@ -26,9 +33,14 @@
   </head>
   <body class="h-full antialiased">
     <div
-      class="mx-auto mt-8 max-w-screen-lg w-full px-4 py-12 lg:pt-16 lg:pb-28 sm:flex sm:flex-col sm:items-center sm:justify-center sm:w-full"
+      class="relative min-h-screen bg-gradient-to-br from-blue-50 to-purple-50"
     >
-      <slot />
+      {/* Main content container */}
+      <div
+        class="relative mx-auto mt-8 max-w-screen-xl w-full px-4 py-12 lg:pt-16 lg:pb-28"
+      >
+        <slot />
+      </div>
     </div>
   </body>
 </html>

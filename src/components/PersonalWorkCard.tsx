@@ -1,49 +1,4 @@
-import { motion, type Variants } from "framer-motion";
-import LinkButton from "./LlinkButton";
-import Badge from "./Badge";
-
-const wrapper: Variants = {
-  offscreen: {
-    opacity: 0,
-  },
-  onscreen: {
-    opacity: 1,
-    transition: {
-      duration: 0.8,
-      staggerChildren: 0.22,
-    },
-  },
-};
-
-const image: Variants = {
-  offscreen: {
-    opacity: 0,
-    y: 10,
-  },
-  onscreen: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      staggerChildren: 0.22,
-    },
-  },
-};
-
-const text: Variants = {
-  offscreen: {
-    opacity: 0,
-    x: -10,
-  },
-  onscreen: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.6,
-      staggerChildren: 0.22,
-    },
-  },
-};
+import { motion } from "framer-motion";
 
 type Link = {
   text: string;
@@ -62,40 +17,74 @@ type PersonalWorkCardProps = {
 const PersonalWorkCard: React.FC<PersonalWorkCardProps> = ({ children, datespan, name, description, links, tags }) => {
   return (
     <motion.div
-      variants={wrapper}
-      className="grid gap-8 sm:grid-cols-2 sm:gap-4"
-      initial="offscreen"
-      whileInView="onscreen"
-      viewport={{ once: true, amount: 0.2 }}
+      className="group relative overflow-hidden"
+      whileHover={{
+        y: -5,
+        transition: { duration: 0.3 }
+      }}
     >
-      <motion.div variants={text}>
-        <motion.span variants={text} className="mt-2 text-sm font-normal leading-5 text-gray-500">
-          {datespan}
-        </motion.span>
-        <motion.h4 variants={text} className="mt-2 text-lg font-medium leading-6 text-gray-900">
-          {name}
-        </motion.h4>
-        <motion.p variants={text} className="mt-2 text-base font-normal leading-6 text-gray-500 ">
-          {description}
-        </motion.p>
-        <div className="flex space-x-4">
-          {links?.map((link) => (
-            <motion.div key={link.text} variants={text}>
-              <LinkButton className="mt-2" text={link.text} href={link.href} />
-            </motion.div>
-          ))}
+      {/* Background gradient effect */}
+      <div className="absolute inset-0 bg-gradient-to-br from-white to-gray-50 rounded-2xl border border-gray-200/50" />
+
+      {/* Hover glow effect */}
+      <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-purple-600 rounded-2xl blur opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
+
+      <div className="relative h-full flex flex-col">
+        {/* Project Image */}
+        <div className="relative overflow-hidden">
+          {children}
         </div>
-        <div className="mt-6">
-          <div className="flex flex-wrap gap-2">
+
+        {/* Content */}
+        <div className="p-6 flex-1 flex flex-col">
+          {/* Date if available */}
+          {datespan && (
+            <div className="text-sm font-medium text-blue-600 mb-2">
+              {datespan}
+            </div>
+          )}
+
+          {/* Title */}
+          <h4 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+            {name}
+          </h4>
+
+          {/* Description */}
+          <p className="text-gray-600 leading-relaxed mb-4 flex-1">
+            {description}
+          </p>
+
+          {/* Links */}
+          {links && links.length > 0 && (
+            <div className="flex flex-wrap gap-3 mb-4">
+              {links.map((link) => (
+                <a
+                  key={link.text}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors"
+                >
+                  {link.text}
+                  <span className="text-xs">↗</span>
+                </a>
+              ))}
+            </div>
+          )}
+
+          {/* Tags */}
+          <div className="flex flex-wrap gap-2 mt-auto">
             {tags.map((tag) => (
-              <Badge key={tag} value={tag} />
+              <span
+                key={tag}
+                className="px-3 py-1 text-xs font-medium bg-gradient-to-r from-blue-50 to-purple-50 text-gray-700 rounded-full border border-gray-200/50"
+              >
+                {tag}
+              </span>
             ))}
           </div>
         </div>
-      </motion.div>
-      <motion.div variants={image} className="order-first sm:order-last sm:place-self-end">
-        {children}
-      </motion.div>
+      </div>
     </motion.div>
   );
 };
