@@ -10,7 +10,7 @@ const Divider = () => {
       className="relative mx-0 py-12"
     >
       <div className="absolute inset-0 flex items-center" aria-hidden="true">
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-700 to-transparent" />
       </div>
 
       {/* Animated gradient dot */}
@@ -23,7 +23,7 @@ const Divider = () => {
         transition={{
           duration: 3,
           repeat: Infinity,
-          ease: "easeInOut"
+          ease: "easeInOut",
         }}
       />
     </motion.div>

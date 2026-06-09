@@ -88,7 +88,7 @@ const WorkExperience = () => {
         variants={containerVariants}
       >
         {/* Timeline Line */}
-        <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-blue-400 to-purple-500 opacity-30" />
+        <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-blue-400 to-purple-500 dark:from-blue-500 dark:to-purple-600 opacity-30" />
 
         {/* Experience Items */}
         <div className="space-y-12 md:space-y-16">
@@ -111,16 +111,16 @@ const WorkExperience = () => {
               >
                 <div className="relative group">
                   {/* Background gradient */}
-                  <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-purple-600 rounded-2xl blur opacity-0 group-hover:opacity-25 transition duration-300" />
+                  <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-purple-600 rounded-2xl blur opacity-0 group-hover:opacity-25 dark:group-hover:opacity-15 transition duration-300" />
 
-                  <div className="relative bg-white rounded-xl p-6 border border-gray-200/50 hover:border-blue-200/50 transition-all duration-300 hover:shadow-xl">
+                  <div className="relative bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200/50 dark:border-gray-700/50 hover:border-blue-200/50 dark:hover:border-blue-400/50 transition-all duration-300 hover:shadow-xl">
                     {/* Date Badge */}
-                    <div className="absolute -top-3 left-6 bg-gradient-to-r from-blue-500 to-blue-600 text-white text-xs font-semibold px-4 py-1.5 rounded-full shadow-md">
+                    <div className="absolute -top-3 left-6 bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-600 dark:to-blue-700 text-white text-xs font-semibold px-4 py-1.5 rounded-full shadow-md">
                       {experience.period}
                     </div>
 
                     <div className="mt-4">
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                         {experience.title}
                       </h3>
 
@@ -129,7 +129,7 @@ const WorkExperience = () => {
                           href={experience.companyUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-base font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1 group/company"
+                          className="text-base font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 inline-flex items-center gap-1 group/company"
                         >
                           {experience.company}
                           <svg
@@ -147,12 +147,12 @@ const WorkExperience = () => {
                           </svg>
                         </a>
                       ) : (
-                        <span className="text-base font-semibold text-gray-600">
+                        <span className="text-base font-semibold text-gray-600 dark:text-gray-300">
                           {experience.company}
                         </span>
                       )}
 
-                      <p className="mt-3 text-gray-600 leading-relaxed">
+                      <p className="mt-3 text-gray-600 dark:text-gray-300 leading-relaxed">
                         {experience.description}
                       </p>
                     </div>

@@ -53,20 +53,20 @@ const SkillSetSection: React.FC = () => {
               variants={itemVariants}
               whileHover={{
                 scale: 1.05,
-                transition: { duration: 0.2 }
+                transition: { duration: 0.2 },
               }}
               className="group relative overflow-hidden"
             >
               {/* Background gradient */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 rounded-xl opacity-100 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 rounded-xl opacity-100 group-hover:opacity-100 transition-opacity" />
 
               {/* Decorative elements */}
-              <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-blue-200/50 to-purple-200/50 rounded-bl-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-blue-200/50 to-purple-200/50 dark:from-blue-500/20 dark:to-purple-500/20 rounded-bl-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               {/* Content */}
-              <div className="relative p-4 border border-gray-200/50 rounded-xl hover:border-blue-300/50 transition-colors">
+              <div className="relative p-4 border border-gray-200/50 dark:border-gray-600/50 rounded-xl hover:border-blue-300/50 dark:hover:border-blue-400/50 transition-colors">
                 <div className="flex flex-col items-center text-center">
-                  <span className="text-sm md:text-base font-semibold text-gray-900 mb-2">
+                  <span className="text-sm md:text-base font-semibold text-gray-900 dark:text-white mb-2">
                     {skill.name}
                   </span>
 
@@ -76,9 +76,14 @@ const SkillSetSection: React.FC = () => {
                       <div
                         key={level}
                         className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                          level <= (skill.level === "advanced" ? 5 : skill.level === "intermediate" ? 3 : 2)
+                          level <=
+                          (skill.level === "advanced"
+                            ? 5
+                            : skill.level === "intermediate"
+                              ? 3
+                              : 2)
                             ? "bg-blue-500"
-                            : "bg-gray-300"
+                            : "bg-gray-300 dark:bg-gray-600"
                         }`}
                       />
                     ))}

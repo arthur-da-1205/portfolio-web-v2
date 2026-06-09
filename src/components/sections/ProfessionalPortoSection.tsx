@@ -51,9 +51,17 @@ const ProfessionalPortfolio = () => {
                 href: "https://linistore.id",
               },
             ]}
-            tags={["React", "Typescript", "Vite", "Ant Design", "Tailwind CSS", "GraphQL", "Less"]}
+            tags={[
+              "React",
+              "Typescript",
+              "Vite",
+              "Ant Design",
+              "Tailwind CSS",
+              "GraphQL",
+              "Less",
+            ]}
           >
-            <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 hover:from-blue-100 hover:to-purple-100 transition-all duration-300">
+            <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 hover:from-blue-100 hover:to-purple-100 dark:hover:from-gray-700 dark:hover:to-gray-800 transition-all duration-300">
               <img
                 className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
                 src={linistore.src}
@@ -78,9 +86,18 @@ const ProfessionalPortfolio = () => {
                 href: "https://play.google.com/store/apps/details?id=id.lini.mitra",
               },
             ]}
-            tags={["React", "Typescript", "Vite", "Chakra UI", "SCSS", "GraphQL", "PWA", "Capacitor by Ionic"]}
+            tags={[
+              "React",
+              "Typescript",
+              "Vite",
+              "Chakra UI",
+              "SCSS",
+              "GraphQL",
+              "PWA",
+              "Capacitor by Ionic",
+            ]}
           >
-            <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-green-50 to-blue-50 hover:from-green-100 hover:to-blue-100 transition-all duration-300">
+            <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-green-50 to-blue-50 dark:from-gray-800 dark:to-gray-900 hover:from-green-100 hover:to-blue-100 dark:hover:from-gray-700 dark:hover:to-gray-800 transition-all duration-300">
               <img
                 className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
                 src={linimitra.src}
@@ -105,9 +122,17 @@ const ProfessionalPortfolio = () => {
                 href: "https://drive.google.com/file/d/1K0zdrp0ZRBmgHRAhDiao-tDJnyKEgJZw/view?usp=share_link",
               },
             ]}
-            tags={["Angular", "Typescript", "Ant Design", "SCSS", "GraphQL", "PWA", "Capacitor by Ionic"]}
+            tags={[
+              "Angular",
+              "Typescript",
+              "Ant Design",
+              "SCSS",
+              "GraphQL",
+              "PWA",
+              "Capacitor by Ionic",
+            ]}
           >
-            <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-purple-50 to-pink-50 hover:from-purple-100 hover:to-pink-100 transition-all duration-300">
+            <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-purple-50 to-pink-50 dark:from-gray-800 dark:to-gray-900 hover:from-purple-100 hover:to-pink-100 dark:hover:from-gray-700 dark:hover:to-gray-800 transition-all duration-300">
               <img
                 className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
                 src={liniseller1.src}
@@ -122,9 +147,17 @@ const ProfessionalPortfolio = () => {
             datespan=""
             name="Sobat Tani App"
             description="An application that helps farmers to meet their garden needs. Farmers can also consult with argonomists to get the best harvest results."
-            tags={["React", "Typescript", "Chakra UI", "SCSS", "Restful API", "PWA", "Capacitor by Ionic"]}
+            tags={[
+              "React",
+              "Typescript",
+              "Chakra UI",
+              "SCSS",
+              "Restful API",
+              "PWA",
+              "Capacitor by Ionic",
+            ]}
           >
-            <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-yellow-50 to-green-50 hover:from-yellow-100 hover:to-green-100 transition-all duration-300">
+            <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-yellow-50 to-green-50 dark:from-gray-800 dark:to-gray-900 hover:from-yellow-100 hover:to-green-100 dark:hover:from-gray-700 dark:hover:to-gray-800 transition-all duration-300">
               <img
                 className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
                 src={sobatTani.src}

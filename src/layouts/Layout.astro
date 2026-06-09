@@ -1,4 +1,6 @@
 ---
+import ThemeToggle from "@components/ThemeToggle";
+
 interface Props {
   title: string;
 }
@@ -23,6 +25,15 @@ const { title } = Astro.props;
       name="keywords"
       content="Arthur Darwanto, Darwanto Arthur, ArthurDarwanto, arthurdarwanto, Arthur Developer, software engineer, web developer, front-end developer, full-stack developer, fullstack developer, software developer, react developer, react native developer, nodejs, nestjs"
     />
+    <script is:inline>
+      // Initialize theme before render to prevent flash
+      const theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
     <style>
       @font-face {
         font-family: 'Bricolage Grotesque';
@@ -31,9 +42,10 @@ const { title } = Astro.props;
       }
     </style>
   </head>
-  <body class="h-full antialiased">
+  <body class="h-full antialiased bg-white dark:bg-gray-950 transition-colors duration-300">
+    <ThemeToggle client:load />
     <div
-      class="relative min-h-screen bg-gradient-to-br from-blue-50 to-purple-50"
+      class="relative min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-950 dark:to-gray-900 transition-colors duration-300"
     >
       {/* Main content container */}
       <div
