@@ -11,7 +11,7 @@ const experiences = [
       "Collaborated with backend team to develop the Julo web application (https://julo.se). Built Dashboard App for Admin to manage all in Fika App and CS support. Handled both frontend and backend development. (abersoft.se / abersoft.id)",
   },
   {
-    period: "August 2022 ― Present",
+    period: "August 2022 ― February 2025",
     title: "Frontend Developer",
     company: "PT Solusi Sinergi Digital Tbk (SURGE)",
     companyUrl: "https://www.surge.co.id/",
