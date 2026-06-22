@@ -88,7 +88,7 @@ const Navigation = () => {
         transition={{ duration: 0.5 }}
         className="fixed top-0 left-0 right-0 z-40 bg-white/80 dark:bg-gray-950/80 backdrop-blur-md border-b border-gray-200/50 dark:border-gray-800/50"
       >
-        <div className="max-w-screen-xl mx-auto px-4 py-4 lg:py-6 flex items-center justify-between">
+        <div className="mx-auto flex w-full max-w-none items-center justify-between px-4 py-4 sm:max-w-screen-xl lg:py-6">
           {/* Logo/Brand */}
           <motion.div
             whileHover={{ scale: 1.05 }}
