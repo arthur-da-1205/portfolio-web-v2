@@ -5,6 +5,10 @@ import linistore from "@assets/linistore.png";
 import linimitra from "@assets/linimitra.png";
 import liniseller1 from "@assets/liniseller1.png";
 import sobatTani from "@assets/sobat_tani.png";
+import julo from "@assets/all_julo.png";
+import fika from "@assets/all_fika.png";
+import opero from "@assets/all_opero.png";
+import archviz from "@assets/all_archviz.png";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -40,6 +44,114 @@ const ProfessionalPortfolio = () => {
         viewport={{ once: true, margin: "-100px" }}
         variants={containerVariants}
       >
+        <motion.div variants={itemVariants}>
+          <PersonalWorkCard
+            datespan=""
+            name="ArchViz AI"
+            description="AI-powered architecture visualization tool. Turn design ideas into polished architectural concepts.
+            Describe an interior, facade, room mood, or spatial concept. ArchViz AI generates visual references you can review, refine, and save into a persistent project gallery."
+            tags={[
+              "Next.js",
+              "Typescript",
+              "Tailwind CSS",
+              "Shadcn UI",
+              "REST API",
+              "SQLite",
+              "Pollinations.ai",
+            ]}
+          >
+            <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 hover:from-blue-100 hover:to-purple-100 dark:hover:from-gray-700 dark:hover:to-gray-800 transition-all duration-300">
+              <img
+                className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
+                src={archviz.src}
+                alt="Archviz"
+              />
+            </div>
+          </PersonalWorkCard>
+        </motion.div>
+
+        <motion.div variants={itemVariants}>
+          <PersonalWorkCard
+            datespan=""
+            name="Opero"
+            description="Retail Operation Platform"
+            tags={[
+              "React",
+              "Typescript",
+              "Tailwind CSS",
+              "Shadcn UI",
+              "GraphQL",
+              "Apollo",
+              "NestJS",
+              "Prisma",
+              "React Query",
+            ]}
+          >
+            <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 hover:from-blue-100 hover:to-purple-100 dark:hover:from-gray-700 dark:hover:to-gray-800 transition-all duration-300">
+              <img
+                className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
+                src={opero.src}
+                alt="Opero"
+              />
+            </div>
+          </PersonalWorkCard>
+        </motion.div>
+
+        <motion.div variants={itemVariants}>
+          <PersonalWorkCard
+            datespan=""
+            name="Julo"
+            description="Easy booking of bicycle service. Find professional bike repair shops near you"
+            links={[
+              {
+                text: "Julo",
+                href: "https://julo.se",
+              },
+            ]}
+            tags={[
+              "Next.js",
+              "Typescript",
+              "Tailwind CSS",
+              "Shadcn UI",
+              "REST API",
+              "NestJS",
+              "Prisma",
+              "React Query",
+            ]}
+          >
+            <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 hover:from-blue-100 hover:to-purple-100 dark:hover:from-gray-700 dark:hover:to-gray-800 transition-all duration-300">
+              <img
+                className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
+                src={julo.src}
+                alt="Julo"
+              />
+            </div>
+          </PersonalWorkCard>
+        </motion.div>
+
+        <motion.div variants={itemVariants}>
+          <PersonalWorkCard
+            datespan=""
+            name="Fika"
+            description="Fika is a Social Membership Club for people who’d rather meet in real life. We organise your first meeting — you just show up."
+            links={[
+              {
+                text: "Fika Connects",
+                href: "https://fikaconnects.com",
+              },
+            ]}
+            tags={["Next.js", "Typescript", "Tailwind CSS"]}
+          >
+            <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 hover:from-blue-100 hover:to-purple-100 dark:hover:from-gray-700 dark:hover:to-gray-800 transition-all duration-300">
+              <img
+                className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
+                src={fika.src}
+                alt="Fika Connects"
+              />
+            </div>
+          </PersonalWorkCard>
+        </motion.div>
+
         <motion.div variants={itemVariants}>
           <PersonalWorkCard
             datespan=""
